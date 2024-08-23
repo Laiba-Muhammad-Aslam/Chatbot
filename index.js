@@ -10,12 +10,10 @@ function sendMessage(){
       if(["hi", "hello", "oye" , "moye"].indexOf(elem.value.toLowerCase()) !== -1){
          setTimeout(function(){
             list.innerHTML += "<li class='left-side left'> Hello </li>"
-            // list.classList.add("left");
          }, 2000)
          setTimeout(function(){
             list.innerHTML += "<li class='left-side left'> How are you? </li>"
             typing.style.display = "none";
-            // list.classList.add("left");
          }, 4000)
          
       }else if(["theek", "Alhamdulillah",  "thk", "set" , "mast"].indexOf(elem.value.toLowerCase()) !== -1){
