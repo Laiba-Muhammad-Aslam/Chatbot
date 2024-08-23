@@ -13,18 +13,21 @@
   <body>
     <div class="container d-flex align-items-center justify-content-center">
         <div class="box">
+           <div id="header" class="text-white">
             <h4 class="text-center text-white p-2">ChatBot</h4>
+            <h6 style="display: none;" id="typing" class="fw-semibold mt-2 p-2 w-30 text-white">typing...</h6>
+           </div>
             <!-- <div style="display: none;" id="typing">
                 typing...
              </div> -->
             <div class="chat-box">
                 
                  <ul id="list" class=""></ul>
-                 <div style="display: none;" id="typing" class="fw-semibold mt-2 p-2 w-30">
+                 <!-- <div style="display: none;" id="typing" class="fw-semibold mt-2 p-2 w-30">
                     typing...
-                 </div>
+                 </div> -->
             </div>
-            <div class="message-box w-100 d-flex align-items-end justify-content-start">
+            <div class="message-box w-100 d-flex justify-content-center align-items-center">
             <input type="text" id="message" placeholder="Enter a message..." class="px-5 py-2 w-100" onkeydown="sendMessage()">
             <i class="bi bi-send-fill"></i>
             </div>
